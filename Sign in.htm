@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Css  -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body style="background-color: #24353F;">
+    <div class="container">
+        <div class="d-flex justify-content-center flex-column align-items-center my-5 p-5 mx-auto custom-shadow-card"
+            style="width: 65%;">
+            <h1 style="color: rgb(23, 162, 184);" class="mb-3">Smart Login System</h1>
+            <input type="text" class="w-100 main-login-inputs  rounded text-white px-3 mb-3" placeholder="Enter your name"
+                style="background-color:#24353F;" id="nameInput">
+            <small class="text-danger mt-1 mb-3 align-self-start d-none" id="errorValidName">Name must start with Uppercase!</small>
+            <input type="email" class="mb-3 w-100 main-login-inputs rounded text-white px-3" placeholder="Enter your email"
+                style="background-color:#24353F;" id="emailInput">
+            <small class="text-danger mt-1 mb-3 align-self-start d-none" id="errorValidEmail">Please Enter a valid Email</small>
+            <input type="password" class="w-100 rounded main-login-inputs text-white px-3 mb-2"
+                placeholder="Enter your password" style="background-color:#24353F;" id="passwordInput">
+            <small class="text-danger mt-1 mb-3 align-self-start d-none" id="errorValidPassword">This input is required!</small>
+            <button class="btn btn-outline-primary w-100" id="signUpBtn">Sign Up</button>
+            <div class="d-flex mt-3 text-white">
+                <p>You have an account?</p>
+                <a href="index.htm" class="text-white ms-1 sign-up-custom"> Sign in</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script/sign in.js"></script>
+</body>
+
+</html>

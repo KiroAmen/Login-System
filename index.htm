@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css  -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body style="background-color: #24353f">
+    <div class="container">
+      <div
+        class="d-flex justify-content-center flex-column align-items-center my-5 p-5 mx-auto custom-shadow-card"
+        style="width: 65%"
+      >
+        <h1 style="color: rgb(23, 162, 184)" class="mb-3">
+          Smart Login System
+        </h1>
+        <input
+          type="email"
+          class="w-100 main-login-inputs rounded mb-3 text-white px-3"
+          placeholder="Enter your email"
+          style="background-color: #24353f"
+          id="emailInput"
+        />
+        <input
+          type="password"
+          class="w-100 rounded main-login-inputs text-white px-3 mb-2"
+          placeholder="Enter your password"
+          style="background-color: #24353f"
+          id="passwordInput"
+        />
+        <small class="text-danger align-self-start mb-3 d-none" id="wrongPassword">Wrong Password!!</small>
+        <a
+          class="btn btn-outline-primary w-100"
+          id="sendToHomePage"
+          target="_self"
+          >Login</a
+        >
+        <div class="d-flex mt-3 text-white">
+          <p>Don’t have an account?</p>
+          <a href="Sign in.htm" class="text-white ms-1 sign-up-custom">
+            Sign up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/sign up.js"></script>
+  </body>
+</html>
